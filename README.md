@@ -1,6 +1,6 @@
 # react-hello
 a minimal react example using plain es5 and webpack with no special 
-configuration (perhaps there shouldl be?) other than source maps.
+configuration (perhaps there should be?) other than source maps.
 
 if the externals section is removed from webpack config, then it takes 
 about 600ms to regenerate dist/bundle.js and dist/bundle.js.map as a consequence of 
@@ -31,6 +31,13 @@ Time: 10ms
    [0] ./index.js 161 bytes {0} [built]
     + 2 hidden modules
 ```
+
+## a real world app is larger than hello
+yes say that it's 700K or so, with react as an external then your bundle.js is only 700K instead 
+of 1441K and webpack takes only 600ms instead of 1200ms. 
+
+## but this is the development version of react, unminified
+yes, the example is meant to demonstrate the save -> reload browser turnaround time. 
 
 ## specs
 MBP 2012 13" 2.5ghz i5
