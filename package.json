@@ -6,7 +6,6 @@
   "dependencies": {
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "source-map-loader": "^0.1.5",
     "webpack": "^1.13.3"
   }
 }
